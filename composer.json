@@ -2,6 +2,7 @@
     "name": "escapepixel/laravel-ca-modules",
     "type": "library",
     "license": "MIT",
+    "description": "Generate Laravel Module in Clean Architecture principle",
     "autoload": {
         "psr-4": {
             "Escapepixel\\LaravelCAModules\\": "src/"
