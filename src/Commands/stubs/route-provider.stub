@@ -1,0 +1,24 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+
+class $CLASS$ extends ServiceProvider
+{
+    /**
+     * Read the routes from the "api.php" file of this Module
+     *
+     * @param \Illuminate\Routing\Router $router
+     */
+
+    public function boot()
+    {   
+        $this->routes(function () {
+            Route::middleware('api')
+                ->prefix('api/v1')
+                ->group(base_path('$API_ROUTES_PATH$'));
+        });
+    }
+}

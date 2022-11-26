@@ -1,0 +1,35 @@
+{
+    "name": "escapepixel/laravel-ca-modules",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Escapepixel\\LaravelCAModules\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Escapepixel\\LaravelCAModules\\Tests\\": "tests"
+        }
+    },
+    "authors": [{
+        "name": "Zue Zue",
+        "email": "zuezue@escapepixel.com"
+    }],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Escapepixel\\LaravelCAModules\\ModuleServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/phpunit-snapshot-assertions": "^4.2"
+    }
+}
